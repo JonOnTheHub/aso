@@ -16,7 +16,7 @@ const OutfitCard = () => {
     <Card className="relative mx-auto w-full max-w-sm pt-0">
       <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
       <Image
-        src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800"
+        src={outfits[0].image}
         width={"400"}
         height={"800"}
         alt="Event cover"

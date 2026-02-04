@@ -2,36 +2,36 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="border-b border-slate-800 bg-slate-900 py-4 text-white">
+    <header className="border-b border-border bg-primary py-4 text-primary-foreground">
       <div className="mx-auto my-0 flex max-w-5xl items-center justify-between">
         <Link
           href={"/"}
-          className="text-3xl font-bold tracking-tight transition-colors hover:text-slate-300"
+          className="text-3xl font-bold tracking-tight transition-colors hover:text-primary-foreground/80"
         >
           ASO
         </Link>
         <nav className="flex items-center gap-8">
           <Link
             href={"/"}
-            className="text-sm font-medium text-slate-300 transition-colors hover:text-white"
+            className="text-sm font-medium text-primary-foreground/70 transition-colors hover:text-secondary"
           >
             Home
           </Link>
           <Link
             href={"/catalogue"}
-            className="text-sm font-medium text-slate-300 transition-colors hover:text-white"
+            className="text-sm font-medium text-primary-foreground/70 transition-colors hover:text-secondary"
           >
             Catalogue
           </Link>
           <Link
             href={"/about"}
-            className="text-sm font-medium text-slate-300 transition-colors hover:text-white"
+            className="text-sm font-medium text-primary-foreground/70 transition-colors hover:text-secondary"
           >
             About Us
           </Link>
           <Link
             href={"/contact"}
-            className="text-sm font-medium text-slate-300 transition-colors hover:text-white"
+            className="text-sm font-medium text-primary-foreground/70 transition-colors hover:text-secondary"
           >
             Contact Us
           </Link>

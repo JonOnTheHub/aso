@@ -6,10 +6,10 @@ const Hero = () => {
   return (
     <section className="flex flex-col items-center justify-between gap-12 py-20 md:flex-row">
       <div className="flex-1 space-y-6">
-        <h1 className="text-5xl font-bold tracking-tight text-slate-900 md:text-6xl lg:text-7xl">
+        <h1 className="text-5xl font-bold tracking-tight text-primary md:text-6xl lg:text-7xl">
           Designed By Culture.
         </h1>
-        <p className="max-w-md text-lg text-slate-600">
+        <p className="max-w-md text-lg text-primary font-light">
           A curated lookbook of modern Nigerian fashion.
         </p>
         <Button>Explore Now</Button>

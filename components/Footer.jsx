@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <section className="bg-slate-900 py-12 text-white">
-      <footer className="mx-auto my-0 max-w-5xl px-6">
+      <footer className="mx-auto my-0 max-w-5xl">
         <div className="flex flex-col gap-8">
           <div className="flex flex-wrap items-center justify-between gap-6 text-sm">
             <div>
@@ -55,7 +55,9 @@ const Footer = () => {
           <div className="border-t border-slate-700"></div>
 
           <div className="py-4 text-center">
-            <h2 className="text-9xl font-black tracking-tight md:text-9xl">ASO</h2>
+            <h2 className="text-9xl font-black tracking-tight md:text-9xl">
+              ASO
+            </h2>
           </div>
         </div>
       </footer>

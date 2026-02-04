@@ -200,3 +200,4 @@ const outfits = [
     keywords: ["athletic", "dry", "gym"],
   },
 ];
+ export default outfits

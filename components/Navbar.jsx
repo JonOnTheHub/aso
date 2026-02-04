@@ -2,34 +2,50 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="bg-slate-900 py-4 text-white">
-      <div className="flex justify-between items-center mx-auto my-0 max-w-5xl px-6">
-        <Link href={"/"} className="text-3xl font-bold">
-          ASO
-        </Link>
-        <div className="flex justify-between items-center gap-16">
-          <Link href={"/"}>Home</Link>
-          <Link href={"/about"}>About Us</Link>
-          <Link href={"/portfolio"}>Portfolio</Link>
-          <Link href={"/contact"}>Contact Us</Link>
-        </div>
-      </div>
-    </header>
+    <header className="border-b border-slate-800 bg-slate-900 py-4 text-white">
+  <div className="mx-auto my-0 flex max-w-5xl items-center justify-between px-6">
+    <Link href={"/"} className="text-3xl font-bold tracking-tight transition-colors hover:text-slate-300">
+      ASO
+    </Link>
+    <nav className="flex items-center gap-8">
+      <Link href={"/"} className="text-sm font-medium text-slate-300 transition-colors hover:text-white">
+        Home
+      </Link>
+      <Link href={"/about"} className="text-sm font-medium text-slate-300 transition-colors hover:text-white">
+        About Us
+      </Link>
+      <Link href={"/portfolio"} className="text-sm font-medium text-slate-300 transition-colors hover:text-white">
+        Portfolio
+      </Link>
+      <Link href={"/contact"} className="text-sm font-medium text-slate-300 transition-colors hover:text-white">
+        Contact Us
+      </Link>
+    </nav>
+  </div>
+</header>
   );
 };
 
 export default Navbar;
 
-{/* <header className="bg-slate-900 py-4 text-white">
-      <div className="flex justify-between items-center mx-auto my-0 max-w-5xl">
-        <Link href={"/"} className="text-3xl font-bold">
-          Aso
-        </Link>
-        <div className="flex justify-between items-center gap-16">
-          <Link href={"/"}>Home</Link>
-          <Link href={"/about"}>About Us</Link>
-          <Link href={"/portfolio"}>Portfolio</Link>
-          <Link href={"/contact"}>Contact Us</Link>
-        </div>
-      </div>
-    </header> */}
+{/* <header className="border-b border-slate-800 bg-slate-900 py-4 text-white">
+  <div className="mx-auto my-0 flex max-w-5xl items-center justify-between px-6">
+    <Link href={"/"} className="text-3xl font-bold tracking-tight transition-colors hover:text-slate-300">
+      ASO
+    </Link>
+    <nav className="flex items-center gap-8">
+      <Link href={"/"} className="text-sm font-medium text-slate-300 transition-colors hover:text-white">
+        Home
+      </Link>
+      <Link href={"/about"} className="text-sm font-medium text-slate-300 transition-colors hover:text-white">
+        About Us
+      </Link>
+      <Link href={"/portfolio"} className="text-sm font-medium text-slate-300 transition-colors hover:text-white">
+        Portfolio
+      </Link>
+      <Link href={"/contact"} className="text-sm font-medium text-slate-300 transition-colors hover:text-white">
+        Contact Us
+      </Link>
+    </nav>
+  </div>
+</header> */}

@@ -49,12 +49,6 @@ const Footer = () => {
               >
                 Legal
               </Link>
-              <Link
-                href={"/"}
-                className="text-slate-300 transition-colors hover:text-white"
-              >
-                Contact
-              </Link>
             </div>
           </div>
 

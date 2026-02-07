@@ -9,27 +9,25 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import outfits from "@/data"
 
-const OutfitCard = () => {
+const OutfitCard = ({title, description, image, category}) => {
   return (
     <Card className="relative mx-auto w-full max-w-sm pt-0">
-      <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
+      <div className="absolute inset-0 z-30 aspect-video bg-black/35 rounded-t-2xl" />
       <Image
-        src={outfits[0].image}
+        src={image}
         width={"400"}
         height={"800"}
         alt="Event cover"
-        className="relative z-20 aspect-video w-full object-cover brightness-60 dark:brightness-40"
+        className="relative z-20 aspect-video w-full object-cover brightness-60 dark:brightness-40 rounded-t-2xl"
       />
       <CardHeader>
         <CardAction>
-          <Badge variant="secondary">In Stock</Badge>
+          <Badge variant="secondary">{category}</Badge>
         </CardAction>
-        <CardTitle>Design systems meetup</CardTitle>
+        <CardTitle>{title}</CardTitle>
         <CardDescription>
-          A practical talk on component APIs, accessibility, and shipping
-          faster.
+          {description}
         </CardDescription>
       </CardHeader>
       <CardFooter>

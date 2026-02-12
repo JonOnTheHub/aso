@@ -69,56 +69,93 @@ const Footer = () => {
           </div>
         </div> */}
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          <div>
-            <p className="font-bold text-3xl">Aso</p>
-            <p>Celebrating African heritage through modern fashion and design</p>
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
+
+          <div className="space-y-4">
+            <p className="text-3xl font-bold tracking-tight">ASO</p>
+            <p className="text-sm text-primary-foreground/70 leading-relaxed">
+              Celebrating African heritage through modern fashion and design.
+            </p>
           </div>
-          <div className="flex flex-col gap-2">
-            <p className="text-xl font-semibold">Shop</p>
-            <div className="flex flex-col gap-4 font-light">
-              <Link href="/catalogue">New Arrivals</Link>
-              <Link href="/catalogue">Men</Link>
-              <Link href="/catalogue">Women</Link>
-              <Link href="/catalogue">Accessories</Link>
+
+          <div className="space-y-4">
+            <p className="text-sm font-semibold uppercase tracking-wider text-primary-foreground/80">
+              Shop
+            </p>
+            <div className="flex flex-col gap-2 text-sm font-light text-primary-foreground/70">
+              <Link href="/catalogue" className="hover:text-secondary transition-colors">
+                New Arrivals
+              </Link>
+              <Link href="/catalogue" className="hover:text-secondary transition-colors">
+                Men
+              </Link>
+              <Link href="/catalogue" className="hover:text-secondary transition-colors">
+                Women
+              </Link>
+              <Link href="/catalogue" className="hover:text-secondary transition-colors">
+                Accessories
+              </Link>
             </div>
           </div>
-          <div className="flex flex-col gap-2">
-            <p className="text-xl font-semibold">Support</p>
-            <div className="flex flex-col gap-4 font-light">
-              <Link href="/catalogue">Help Center</Link>
-              <Link href="/catalogue">Returns</Link>
-              <Link href="/catalogue">Shipping Info</Link>
-              <Link href="/catalogue">Size Guide</Link>
+
+          <div className="space-y-4">
+            <p className="text-sm font-semibold uppercase tracking-wider text-primary-foreground/80">
+              Support
+            </p>
+            <div className="flex flex-col gap-2 text-sm font-light text-primary-foreground/70">
+              <Link href="/help" className="hover:text-secondary transition-colors">
+                Help Center
+              </Link>
+              <Link href="/returns" className="hover:text-secondary transition-colors">
+                Returns
+              </Link>
+              <Link href="/shipping" className="hover:text-secondary transition-colors">
+                Shipping Info
+              </Link>
+              <Link href="/size-guide" className="hover:text-secondary transition-colors">
+                Size Guide
+              </Link>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">Stay Connected</p>
-            <div className="flex flex-row gap-4 font-light">
-              <Link href="/catalogue">
-                <Mail />
+
+          <div className="space-y-4">
+            <p className="text-sm font-semibold uppercase tracking-wider text-primary-foreground/80">
+              Stay Connected
+            </p>
+            <div className="flex items-center gap-5 font-light text-primary-foreground/70">
+              <Link href="#" className="hover:text-secondary transition-colors">
+                <Mail size={18} />
               </Link>
-              <Link href="/catalogue">
-                <Instagram />
+              <Link href="#" className="hover:text-secondary transition-colors">
+                <Instagram size={18} />
               </Link>
-              <Link href="/catalogue">
-                <Twitter />
+              <Link href="#" className="hover:text-secondary transition-colors">
+                <Twitter size={18} />
               </Link>
-              <Link href="/catalogue">
-                <Facebook />
+              <Link href="#" className="hover:text-secondary transition-colors">
+                <Facebook size={18} />
               </Link>
             </div>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-between ">
-          <p>© 2026 Aso Fashion. All Rights Reserved</p>
-          <div className="flex flex-row gap-4">
-            <p>Privacy Policy</p>
-            <p>Terms Of Service</p>
+
+        {/* Divider */}
+        <div className="my-12 border-t border-primary-foreground/15" />
+
+        <div className="flex flex-col items-center justify-between gap-4 text-xs text-primary-foreground/60 md:flex-row">
+          <p>© 2026 ASO Fashion. All rights reserved.</p>
+          <div className="flex items-center gap-6">
+            <Link href="/privacy" className="hover:text-secondary transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="hover:text-secondary transition-colors">
+              Terms of Service
+            </Link>
           </div>
         </div>
       </section>
     </footer>
+
   );
 };
 

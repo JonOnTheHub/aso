@@ -3,7 +3,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <header className="border-b border-border bg-primary py-4 text-primary-foreground">
-      <div className="mx-auto my-0 flex max-w-5xl items-center justify-between px-4">
+      <div className="mx-auto my-0 flex max-w-7xl items-center justify-between px-4">
         <Link
           href={"/"}
           className="mx-auto text-3xl font-bold tracking-tight transition-colors hover:text-primary-foreground/80 md:mx-0"

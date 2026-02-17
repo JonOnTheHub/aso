@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/fregan-serif");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -46,6 +47,7 @@
 
 :root {
   --radius: 0.625rem;
+  --font-fregan: "Fregan Serif", sans-serif;
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
   --card: oklch(1 0 0);
@@ -119,5 +121,12 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--font-fregan);
   }
 }

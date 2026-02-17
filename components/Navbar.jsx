@@ -1,40 +1,30 @@
 import Link from "next/link";
 
 const Navbar = () => {
+  const navLinks = [
+    { name: "Home", href: "/" },
+    { name: "Explore", href: "/explore" },
+    { name: "Favorites", href: "/favorites" },
+    { name: "My Collection", href: "/my-collection" }]
   return (
     <header className="border-b border-border bg-primary py-4 text-primary-foreground">
       <div className="mx-auto my-0 flex max-w-7xl items-center justify-between px-4">
         <Link
           href={"/"}
-          className="mx-auto text-3xl font-bold tracking-tight transition-colors hover:text-primary-foreground/80 md:mx-0"
+          className="mx-auto text-3xl font-bold tracking-wide transition-colors hover:text-primary-foreground/80 md:mx-0 font-[--font-fregan]"
         >
           ASO
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
-          <Link
-            href={"/"}
-            className="text-sm font-medium text-primary-foreground/70 transition-colors hover:text-secondary"
-          >
-            Home
-          </Link>
-          <Link
-            href={"/catalogue"}
-            className="text-sm font-medium text-primary-foreground/70 transition-colors hover:text-secondary"
-          >
-            Catalogue
-          </Link>
-          <Link
-            href={"/about"}
-            className="text-sm font-medium text-primary-foreground/70 transition-colors hover:text-secondary"
-          >
-            About Us
-          </Link>
-          <Link
-            href={"/contact"}
-            className="text-sm font-medium text-primary-foreground/70 transition-colors hover:text-secondary"
-          >
-            Contact Us
-          </Link>
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              className="text-sm font-medium text-primary-foreground/70 transition-colors hover:text-primary-foreground"
+            >
+              {link.name}
+            </Link>
+          ))}
         </nav>
       </div>
     </header>
